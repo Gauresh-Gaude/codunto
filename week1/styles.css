@@ -1,0 +1,121 @@
+ body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #1a237e; /* A deep blue for headings */
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: normal;
+            margin-top: 0;
+            color: #5c6bc0; /* A lighter blue */
+        }
+
+        h3 {
+            font-size: 1.3em;
+            border-bottom: 2px solid #5c6bc0;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 0 0 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .contact-info a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .section-item h4 {
+            font-size: 1.1em;
+            margin: 0;
+        }
+
+        .section-item p {
+            font-size: 0.9em;
+            color: #777;
+            margin: 0 0 5px;
+        }
+
+        .experience-details {
+            margin-top: 5px;
+        }
+
+        .experience-details li {
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .experience-details li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #5c6bc0;
+            font-size: 1.2em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
