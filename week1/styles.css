@@ -40,6 +40,12 @@
             padding: 10px;
             width: auto;
         }
+        section{
+            padding: 10px;
+            box-shadow: 1px 1px 10px #888888;
+            margin-bottom: 7px;
+            border-radius: 10px;
+        }
 
         .container {
             max-width: 800px;
