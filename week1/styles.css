@@ -5,6 +5,11 @@
             background-color: #f4f4f4;
             color: #333;
         }
+ body.dark-mode{
+    background-color: #1d1d1d;
+            color: #fffbfb;
+ }
+
         .navbar{
             background: rgb(53, 67, 221);
             font-family: calibri;
@@ -34,6 +39,10 @@
             margin-right: 25px;
             text-decoration: none;
         }
+        li a.dark-mode{
+            color: #1e1d1d;
+        }
+
         button{
             background-color: #777;
             border-radius: 15px;
@@ -43,8 +52,13 @@
         section{
             padding: 10px;
             box-shadow: 1px 1px 10px #888888;
-            margin-bottom: 7px;
+            margin-bottom: 15px;
             border-radius: 10px;
+            transition: transform .1s;
+        
+          }
+        section:hover{
+            transform: scale(1.1);
         }
 
         .container {
@@ -53,6 +67,9 @@
             background-color: #fff;
             padding: 30px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container.dark-mode{
+             background-color: #1e1d1d;
         }
 
         h1, h2, h3 {
