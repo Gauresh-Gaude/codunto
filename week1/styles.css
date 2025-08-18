@@ -5,10 +5,10 @@
             background-color: #f4f4f4;
             color: #333;
         }
- body.dark-mode{
+ /* body.dark-mode{
     background-color: #1d1d1d;
             color: #fffbfb;
- }
+ } */
 
         .navbar{
             background: rgb(53, 67, 221);
@@ -39,9 +39,9 @@
             margin-right: 25px;
             text-decoration: none;
         }
-        li a.dark-mode{
+        /* li a.dark-mode{
             color: #1e1d1d;
-        }
+        } */
 
         button{
             background-color: #777;
@@ -55,8 +55,10 @@
             margin-bottom: 15px;
             border-radius: 10px;
             transition: transform .1s;
-        
           }
+        section.container.dark-mode{
+            background-color: #1e1d1d;
+        }
         section:hover{
             transform: scale(1.1);
         }
@@ -70,6 +72,7 @@
         }
         .container.dark-mode{
              background-color: #1e1d1d;
+             color: #fff;
         }
 
         h1, h2, h3 {
