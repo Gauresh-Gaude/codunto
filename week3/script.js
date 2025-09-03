@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const drink = data.drinks[0];
             
             if (drink) {
-                // Collect ingredients and measures
                 const ingredients = [];
                 for (let i = 1; i <= 15; i++) {
                     const ingredient = drink[`strIngredient${i}`];
@@ -63,7 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
 
-                // Create and display a modal or new section with details
                 alert(`
 Drink: ${drink.strDrink}
 Category: ${drink.strCategory}
