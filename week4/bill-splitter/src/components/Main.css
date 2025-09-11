@@ -1,9 +1,14 @@
 
 /* heading */
 .container {
+  height: 70vh;
   text-align: center;
   font-family: "Arial", sans-serif;
   margin-top: 90px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 8px 5px 5px rgb(95, 95, 95);
 }
 
 .icon {
