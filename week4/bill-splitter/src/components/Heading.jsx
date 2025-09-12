@@ -22,8 +22,6 @@ const Heading = () => {
           </button>
         {/* <button className="manual-btn">Enter Manually</button> */}
       </div>
-      
-      {page === "manual" && <ManualEntry goBack={() => setPage("Heading.jsx")} />}
     </div>
   );
 };
