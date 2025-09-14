@@ -71,6 +71,10 @@
   width: 90px;
 }
 
+.extra-inputs label h4 {
+  color: #000000;
+}
+
 .total {
   font-weight: bold;
   font-size: 18px;

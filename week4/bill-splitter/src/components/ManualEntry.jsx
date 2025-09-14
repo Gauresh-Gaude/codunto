@@ -59,7 +59,7 @@ const ManualEntry = ({ goBack }) => {
 
       <div className="extra-inputs">
         <label>
-          Tip: $
+          <h4>Tip: $</h4>
           <input
             type="number"
             value={tip}
@@ -67,7 +67,7 @@ const ManualEntry = ({ goBack }) => {
           />
         </label>
         <label>
-          Tax: $
+          <h4>Tax: $</h4>
           <input
             type="number"
             value={tax}
