@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router";
 import "./ManualEntry.css";
 
 const ManualEntry = ({ goBack }) => {
+  const navigate = useNavigate();
   const [items, setItems] = useState([{ name: "", price: "" }]);
   const [tip, setTip] = useState(0);
   const [tax, setTax] = useState(0);
@@ -28,7 +30,7 @@ const ManualEntry = ({ goBack }) => {
 
   return (
     <div className="manual-container">
-      <button className="back-btn" onClick={goBack}>← Back</button>
+      <button className="back-btn" onClick={() => navigate("/")}>←Back</button>
 
       <h2>Receipt Items</h2>
       <p>List all the items on your receipt</p>
@@ -78,7 +80,7 @@ const ManualEntry = ({ goBack }) => {
 
       <div className="total">Total: ${total.toFixed(2)}</div>
 
-      <button className="continue-btn">Continue</button>
+      <button className="continue-btn" onClick={() => navigate("/assign")}>Continue</button>
     </div>
   );
 };
