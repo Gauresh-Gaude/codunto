@@ -80,7 +80,13 @@ const ManualEntry = ({ goBack }) => {
 
       <div className="total">Total: ${total.toFixed(2)}</div>
 
-      <button className="continue-btn" onClick={() => navigate("/assign")}>Continue</button>
+      <button
+  className="continue-btn"
+  onClick={() => navigate("/assign", { state: { items, tip, tax } })}
+>
+  Continue
+</button>
+
     </div>
   );
 };
